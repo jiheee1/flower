@@ -1,0 +1,393 @@
+<idoctype html>
+<head>
+	<meta charset = "utf-8">
+	<link href='normalize.css' rel="stylesheet">
+	<link href='https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
+	<style>
+		html { font-family: 'Spoqa Han Sans'; font-weight: 200;}
+		.section{height:600px;width:100%;position: relative}
+		header{height:250px; background: white ;width:100%; transition: all 0.3s}
+		header #logo{width:200px;text-align: center;height:44px;line-height: 44px;font-size: 1.5em;font-weight: 700;
+			padding-top:30px; position:relative;left:calc(50% - 100px);transition: all 0.3s;color:#cf2e33;}
+		header #menu{width:700px;height:100px;position:relative;left:calc(50% - 350px);top:150px;margin-top: 50px;transition: all 0.3s}
+		header li{width:35px;height:35px;position:relative;left:calc(50% - 188px);color:black;background: white;float:left;border-radius: 50px;text-align: center;line-height:35px;color:black;font-size: 1em;font-weight: 200;margin-left: 20px;margin-right:20px;margin-top:40px;}
+		h1{color:black;font-size: 1.5em;font-weight: 400;text-align: center;padding-top:280px; line-height: 2;padding-left: 100px;padding-right: 100px;letter-spacing: 1px;}
+		h2{color:black;font-size: 4em;font-weight: 100;text-align: center;padding-top:280px; line-height: 2;padding-left: 0px;padding-right: 100px;letter-spacing: 1px;}
+		mark{background: white;}
+		h3{color:#416b52;font-size: 2em;font-weight: 300;text-align: center;padding-top:280px; line-height: 2;padding-left: 100px;padding-right: 100px;letter-spacing: 1px;}
+		h4{color:#cf2e33;font-size: 2em;font-weight: 500;text-align: center;padding-top:230px; line-height: 2;padding-left: 100px;padding-right: 100px;letter-spacing: 1px;}
+		h5{color:black; font-size: 4em;font-weight: 100;text-align: center;padding-top:230px; line-height: 1;padding-left: 100px;padding-right: 100px;letter-spacing: 1px;}
+		#sectionA{ background: white; transition: all 1s; }
+		#sectionB{ background: white; transition: all 1s; }
+		#sectionC{ background: url('./flower_beer_2.jpg');background-size:100% auto;background-position: 0px -120px; }
+		#sectionD{ background: #cf2e33; transition: all 1s; }
+		#sectionE{ background: white; transition: all 1s; }
+		#sectionF{ background: #ead6d8; transition: all 1s; }
+
+		#titleA{width:500px; position:relative;left:calc(50 - 150px);transition: all 1s;padding-top:80px;}
+		#titleB{transition: all 1s;}
+		#titleC{transition: all 1s;}
+		#titleD{transition: all 1s;}
+		#titleE{transition: all 1s;}
+
+		#icon{width:50px;height:50px;
+			position:relative;
+			animation:iconMove 5s infinite linear;	}
+			@keyframes iconMove{
+			0%{ top:0px; left:300px; transform: rotateZ(0deg)}
+			25%{ top:0px; left:600px; }
+			50%{ top:400px; left:900px; }
+			75%{ top:100px; left:1000px; }
+			100%{ top:500px; left:300px; transform: rotateZ(2000deg);}
+		}
+
+/* Slideshow */
+/* Slideshow */
+/* Slideshow */
+
+
+.mySlides .slide-box{width:100%;height:600px;}
+.mySlides .slide-box img{position: absolute; transition: all 0.5s;}
+.text_box {width:400px;height: 400px; margin: 100px; padding-left:50px; float: left;}
+.text_box_2 {width:450px;height: 400px; margin: 100px; padding-top:10px; margin-right: 30px;float: left;}
+.text_main{ font-weight:100; font-size: 2em; line-height:50px; height: 100px;padding-top: 30px; }
+.text_main_2{ font-weight:600; font-size: 2em; line-height:50px; height: 100px;padding-top: 30px; }
+.text_sub{ font-weight: 300; font-size: 1em; line-height:30px; margin-top: 40px; padding-left: 10px;}
+.text_sub_2{ font-weight: 300; font-size: 1em; line-height:28px; margin-top: 45px;}
+    * {box-sizing:border-box; word-break: keep-all;}
+.text_sub_3{ font-weight: 200; font-size: 0.8em; line-height:12px;}
+    * {box-sizing:border-box; word-break: keep-all;}
+
+/* Slideshow container */ 
+.slideshow-container {
+  max-width: 2000px;
+  max-height:780px;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: grey;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 3px;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #cf2e33;
+  color: white;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1s;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+/* Slideshow */
+/* Slideshow */
+/* Slideshow */
+
+
+	</style>
+</head>
+<body>
+<header id="header">
+	<div id="logo">
+	<img src="./logo_red.png" style="width:50px; padding-top: 50px; "></div>
+	<div id="menu">
+		<ul>
+			<li id="menuA">A</li>
+			<li id="menuB">B</li>
+			<li id="menuC">C</li>
+			<li id="menuD">D</li>
+			<li id="menuE">E</li>
+		</ul>
+	</div>
+</header>
+<div class="section" id="sectionA">
+		
+		<div id="flower">
+			<img src="./flower.png" style="width:500px; margin-top: 150px;float:left;">
+		</div>
+		<h2 id="titleA" style="float:left;">꽃 한 잔?</h2>
+		<div id="beer">
+			<img src="./beer.png" style="width:280px; margin-top: 10px; margin-left: 550px; float:left; ">
+		</div> 
+		
+</div>
+<div class="section" id="sectionB">
+	<h4 id="titleB">꽃 한 잔은 향기로운 꽃 술 한 잔을 말합니다.</h4>
+</div>
+<div class="section" id="sectionC">
+	<h3 id="titleC"><pre><mark> 작은 꽃 한 송이가 전해주는 즐거움. 
+ 꽃을 받을 때의 즐거움을 그대로 한 잔의 술에 담았습니다. </mark></pre></h3>
+</div>
+<div class="section" id="sectionD">
+		<div id="icon">
+			<img src="./heart.png">
+		</div>
+	<h1 id="titleD"> 	</h1>
+</div>
+
+<div class="section" id="sectionE">
+
+
+		<div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="slide-box">
+    <div class="text_box">
+      	<img src="./graphic_01.png"  style="width:400px; float: left;">
+     </div>
+      	<div class="text_box" style="margin-left: 150px">
+      		<div class="text_main">
+      			<img src="./text_01.svg"  style="width:100px; height:100px; float: left;">
+      		</div>
+      			<div class="text_sub">
+      				<pre>꽃 이름의 자음 모음을 연결해 
+홍화의 모양을 그래픽적으로 나타냈다.</pre>
+      			</div>
+      	</div>
+    </div>
+  </div>
+
+
+  <div class="mySlides fade">
+   <div class="slide-box">
+       <div class="text_box">
+      	<img src="./graphic_02.png"  style="width:400px; float: left;">
+     </div>
+      	<div class="text_box" style="margin-left: 150px">
+      		<div class="text_main">
+      			<img src="./text_02.svg"  style="width:100px; height:100px; float: left;">
+      		</div>
+      			<div class="text_sub">
+      				<pre>꽃 이름의 자음 모음을 연결해 
+벚꽃의 모양을 그래픽적으로 나타냈다.</pre>
+      			</div>
+      	</div>
+    </div>
+  </div>
+
+
+  <div class="mySlides fade">
+      <div class="slide-box">
+       <div class="text_box">
+      	<img src="./graphic_03.png"  style="width:400px; float: left;">
+     </div>
+      	<div class="text_box" style="margin-left: 150px">
+      		<div class="text_main">
+      			<img src="./text_03.svg"  style="width:120px; height:120px; float: left;">
+      		</div>
+      			<div class="text_sub">
+      				<pre>꽃 이름의 자음 모음을 연결해 
+개나리의 모양을 그래픽적으로 나타냈다.</pre>
+      			</div>
+      	</div>
+    </div>
+  </div> 
+
+
+  <div class="mySlides fade">
+      <div class="slide-box">
+       <div class="text_box">
+      	<img src="./graphic_04.png"  style="width:400px; float: left;">
+     </div>
+      	<div class="text_box" style="margin-left: 150px">
+      		<div class="text_main">
+      			<img src="./text_04.svg"  style="width:110px; height:110px; float: left;">
+      		</div>
+      			<div class="text_sub">
+      				<pre>꽃 이름의 자음 모음을 연결해 
+민들래의 모양을 그래픽적으로 나타냈다.</pre>
+      			</div>
+      	</div>
+    </div>
+  </div> 
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+
+<div class="section" id="sectionE">
+	<h5 id="titleE">꽃 한 잔 제품소개<br>
+	-</h5>
+</div>
+
+<div class="section" id="sectionF">
+      	<div class="text_box_2" style="margin-left: 150px">
+      		<div class="text_main_2">
+      			“향기로운 꽃과 스파클링 맥주가 만나 꽃 맥주가 되다.” 
+      		</div>
+      			<div class="text_sub_2">
+      				입안 가득 향기롭게 퍼지는 4가지의 다양한 꽃과 낮은 도수의 스파클링 맥주로 부담없이 가볍게 누구나 즐 길 수 있습니다.
+      			</div>
+      			<div class="text_sub_3">
+      				<br>-</br>
+      				<br>홍화 12.8%</br>
+      				<br>375ml</br>
+      				<br>4.5% ALC/VOL.</br>
+      			</div>
+      	</div>
+      		<div class="text_box">
+      			<img src="./hong.jpg"  style="width:400px; float: left;">
+     		</div>
+
+	<h1 id="titleE"></h1>
+</div>
+
+
+<script>
+	window.onscroll = function(){
+		console.log(document.body.scrollTop);
+		var scrollH = document.body.scrollTop;
+		if(scrollH > 50){
+			header.style.height = "44px";
+			header.style.position = "fixed";
+			header.style.top = "0px";
+			header.style.zIndex = "9999";
+			menu.style.left = "400px";
+			menu.style.top = "-70px";
+			logo.style.left = "0px";
+			sectionA.style.marginTop = "44px";
+		}else{
+			header.style.height = "250px";
+			header.style.position = "relative";
+			header.style.top = "0px";
+			logo.style.left = "calc(50% - 100px)";
+			menu.style.left = "calc(50% - 350px)";
+			menu.style.top = "80px";
+			sectionA.style.marginTop = "0px";
+
+		}
+
+		if(scrollH > 280){
+			titleA.style.paddingTop = "300px";
+			menuA.style.background = "#cf2e33";
+			menuA.style.color = "white";
+		}else{
+			titleA.style.paddingTop = "100px";
+			menuA.style.background = "white";
+			menuA.style.color = "black";
+		}
+
+		if(scrollH > 400){
+			titleB.style.paddingTop = "270px";
+			titleB.style.transform = "scaleY(1)";
+			menuB.style.background = "#cf2e33";
+			menuB.style.color = "white";
+		}else{
+			titleB.style.paddingTop = "400px";
+			titleB.style.transform = "scaleY(0)";
+			menuB.style.background = "white";
+			menuB.style.color = "black";
+		}
+
+		if(scrollH > 918){
+			sectionC.style.backgroundAttachment = "fixed";
+			menuC.style.background = "#cf2e33";
+			menuC.style.color = "white";
+		}else{
+			sectionC.style.backgroundAttachment = "scroll";
+			menuC.style.background = "white";
+			menuC.style.color = "black";
+		}
+
+		if(scrollH > 1686){
+			titleD.style.paddingTop = "300px"
+			sectionD.style.background = "#f5d24a";
+			titleD.style.color = "white";
+			titleD.style.fontWeight = "500";
+			menuD.style.background = "#cf2e33";
+			menuD.style.color = "white";
+			titleD.innerHTML = "즐거움으로 가득찼으면 좋겠습니다.";
+		}else{
+			titleD.style.paddingTop = "150px"
+			sectionD.style.background = "#ec6855";
+			titleD.style.color = "white";
+			titleD.style.fontWeight = "200";
+			menuD.style.background = "white";
+			menuD.style.color = "black";
+			titleD.innerHTML = "꽃 한 잔의 꽃 술을 마셨을때도";
+		}
+
+		if(scrollH > 2200){
+			sectionE.style.background = "white";
+			titleE.style.fontSize = "2.5em";
+			titleE.style.fontWeight = "500";
+			menuE.style.background = "#cf2e33";
+			menuE.style.color = "white";
+		}else{
+			sectionE.style.background = "blue";
+			titleE.style.fontSize = "1.5em";
+			titleE.style.fontWeight = "200";
+			menuE.style.background = "white";
+			menuE.style.color = "black";
+		}
+
+
+
+	}
+
+	var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+</body>
